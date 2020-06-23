@@ -39,9 +39,12 @@ public class MemberDAO {//데이터 배이스 연결
 				while (rs.next()) {
 					String empno = rs.getString("empno");
 					String ename = rs.getString("ename");
+					String job = rs.getString("job");
 					int sal = rs.getInt("Sal");
+					
+					
 
-					MemberVo data = new MemberVo(empno, ename, sal);
+					MemberVo data = new MemberVo(empno, ename, job, sal);
 					list.add(data);
 				}
 			}

@@ -2,15 +2,18 @@
 public class MemberVo {//조회 
 	private String empno;
 	private String ename;
+	private String job;
 	private int sal;
+	
 
 	public MemberVo() {
 
 	}
 
-	public MemberVo(String empno, String ename, int sal) {
+	public MemberVo(String empno, String ename, String job, int sal) {
 		this.empno = empno;
 		this.ename = ename;
+		this.job = job;
  		this.sal = sal;
 	}
 
@@ -21,7 +24,9 @@ public class MemberVo {//조회
 	public String getEname() {
 		return ename;
 	}
-
+	public String getJob() {
+		return job;
+	}
 	public int getSal() {
 		return sal;
 	}
